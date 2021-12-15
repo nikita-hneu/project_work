@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\About.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddVisit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\RemoveVisit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ShowVisitList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\About.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddInternetResource.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddVisit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\RemoveInternetResource.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\RemoveUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\RemoveVisit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ShowInternetResourcesList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ShowUsersList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ShowVisitList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

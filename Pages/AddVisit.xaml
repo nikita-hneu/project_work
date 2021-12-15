@@ -1,0 +1,53 @@
+﻿<Page x:Class="Project_Work.Pages.AddVisit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Project_Work"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Remove internet resource" Height="600" Width="900" Background="#063852">
+
+    <Grid>
+        <Menu VerticalAlignment="Top" Background="#011a27" Grid.ColumnSpan="2" Height="48" Foreground="White">
+            <MenuItem Header="Головна сторінка" Click="MainMenu">
+            </MenuItem>
+            <MenuItem Header="Інтернет ресурс">
+                <MenuItem Header="Додати" Click="AddInternetResource"/>
+                <MenuItem Header="Видалити" Click="RemoveInternetResource"/>
+            </MenuItem>
+            <MenuItem Header="Користувач" >
+                <MenuItem Header="Додати" Click="AddUser"/>
+                <MenuItem Header="Видалити" Click="RemoveUser"/>
+            </MenuItem>
+
+            <MenuItem Header="Відвідування" >
+                <MenuItem Header="Додати"/>
+                <MenuItem Header="Видалити" Click="RemoveVisit"/>
+            </MenuItem>
+
+            <MenuItem Header="Списки" >
+                <MenuItem Header="Інтернет ресурси" Click="ShowInternetResourcesList"/>
+                <MenuItem Header="Користувачі" Click="ShowUsersList"/>
+                <MenuItem Header="Відвідування" Click="ShowVisitList"/>
+            </MenuItem>
+            <MenuItem Header="Про програму" Click="About"></MenuItem>
+            <MenuItem Header="Вихід" Click="Exit"></MenuItem>
+        </Menu>
+
+        <Border MinWidth="300" Margin="15,0,15,0" Background="White" VerticalAlignment="Center" Padding="10" MaxWidth="550" CornerRadius="20" Height="170">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"></DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Додати відвідування" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"></TextBlock>
+
+                <ComboBox x:Name="UsersComboBox" materialDesign:HintAssist.Hint="Користувач" Style="{StaticResource MaterialDesignFloatingHintComboBox}"></ComboBox>
+                <ComboBox x:Name="ResourcesComboBox" materialDesign:HintAssist.Hint="Інтернет ресурс" Style="{StaticResource MaterialDesignFloatingHintComboBox}"></ComboBox>
+
+                <Button Click="Add_Visit" Margin="0 10 0 0" HorizontalAlignment="Center" Content="Додати" Style="{StaticResource MaterialDesignFlatDarkBgButton}"></Button>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</Page>
